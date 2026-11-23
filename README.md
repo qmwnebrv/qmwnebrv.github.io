@@ -24,12 +24,13 @@ Opening `index.html` straight from the file system mostly works too, but the emb
 | `photo.html` | Photo (links to the two galleries) |
 | `varanassi.html` | Varanassi gallery (slideshow, 14 images) |
 | `black-and-white.html` | Black & White gallery (slideshow, 19 images) |
+| `tumblr.html` | Tumblr scrapbook (54 photos from chasingflies.tumblr.com, 2013 to 2022, resized from the Tumblr export) |
 | `video.html` | Video (two YouTube embeds) |
 | `about.html` | About |
 | `science.html` | Science |
 | `contact.html` | Contact form (Web3Forms) |
 
-`style.css` holds the shared styles, `slideshow.js` runs the gallery slideshows, and `images/` holds the images taken from the `.muse` file.
+`style.css` holds the shared styles, `slideshow.js` runs the gallery slideshows, `scrapbook.js` runs the Tumblr lightbox, and `images/` holds the images taken from the `.muse` file.
 
 ## Rebuilding the 2014 original
 

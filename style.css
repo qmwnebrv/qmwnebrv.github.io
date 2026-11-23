@@ -30,3 +30,32 @@ body { font: 14px/1.4 Arial, "Helvetica Neue", Helvetica, sans-serif; color: #00
   font-family: "Gill Sans MT", "Gill Sans", Calibri, sans-serif; font-size: 15px; cursor: pointer; }
 .contact button:hover { background: #000; color: #fff; }
 .contact .botcheck { display: none; }
+
+/* scrapbook pages */
+.scrap-page { min-height: 100vh; padding: 150px 60px 110px; }
+.scrap-intro { text-align: center; color: #666; margin-bottom: 30px; }
+.scrapbook { display: grid; grid-template-columns: repeat(4, 1fr); gap: 34px 28px; align-items: center; }
+.print { position: relative; display: block; break-inside: avoid; margin: 0; padding: 8px 8px 10px;
+  background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,.22); color: #333; text-decoration: none;
+  transition: transform .2s ease, box-shadow .2s ease; }
+.print:hover { transform: rotate(0deg) scale(1.04) !important; box-shadow: 0 6px 16px rgba(0,0,0,.3); z-index: 2; }
+.print img { display: block; width: 100%; height: auto; }
+.print .cap { display: block; margin-top: 7px; font: bold 13px "Courier New", Courier, monospace; text-align: center; }
+.tape { position: absolute; top: -10px; left: 50%; width: 70px; height: 20px; background: rgba(240,230,180,.75);
+  box-shadow: 0 1px 2px rgba(0,0,0,.12); }
+.sticker { display: flex; align-items: center; justify-content: center; break-inside: avoid; width: 86px; height: 86px;
+  margin: 0 auto; border-radius: 50%; font: bold 22px "Courier New", Courier, monospace; color: #4a4a4a; }
+.lightbox { position: fixed; inset: 0; z-index: 10; display: flex; align-items: center; justify-content: center;
+  background: rgba(255,255,255,.96); }
+.lightbox[hidden] { display: none; }
+.lightbox figure { margin: 0; text-align: center; }
+.lightbox img { max-width: 86vw; max-height: 84vh; padding: 10px; background: #fff; box-shadow: 0 4px 20px rgba(0,0,0,.25); }
+.lightbox figcaption { margin-top: 10px; font: bold 15px "Courier New", Courier, monospace; color: #333; min-height: 1em; }
+.lightbox button { position: absolute; border: 0; background: none; font: 48px Georgia, serif; color: #999; cursor: pointer; }
+.lightbox button:hover { color: #333; }
+.lb-close { top: 10px; right: 24px; } .lb-prev { left: 20px; } .lb-next { right: 20px; }
+/* photo page prints */
+.photo-tile { text-decoration: none; padding: 8px 8px 0; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,.22); transition: transform .2s ease; }
+.photo-tile:hover { transform: rotate(0deg) scale(1.03) !important; }
+.photo-tile img { height: auto !important; aspect-ratio: 1; }
+.photo-tile .cap { display: block; padding: 8px 0 10px; text-align: center; font: bold 15px "Courier New", Courier, monospace; color: #333; }
