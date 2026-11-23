@@ -26,10 +26,14 @@ Opening `index.html` straight from the file system mostly works too, but the emb
 | `black-and-white.html` | Black & White gallery (slideshow, 19 images) |
 | `video.html` | Video (two YouTube embeds) |
 | `about.html` | About |
+| `science.html` | Science |
+| `contact.html` | Contact form (Web3Forms) |
 
 `style.css` holds the shared styles, `slideshow.js` runs the gallery slideshows, and `images/` holds the images taken from the `.muse` file.
 
-## Rebuilding
+## Rebuilding the 2014 original
+
+The pages have been edited by hand since the rebuild (new About text, a Science page, a contact page, and a Science button made by a script outside this repo). Running the script below overwrites those edits with the 2014 versions, so only use it to recover the originals.
 
 `_build_from_muse.py` regenerates the HTML pages and `images/` from `../dannytsmithcom.muse`. That file is a SQLite database holding the page layout as XML, with the images embedded. The script only uses the Python standard library:
 
