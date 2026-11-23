@@ -2,11 +2,10 @@
   var prints = Array.prototype.slice.call(document.querySelectorAll('.print'));
   var lb = document.querySelector('.lightbox');
   if (!lb || !prints.length) return;
-  var img = lb.querySelector('img'), cap = lb.querySelector('figcaption'), i = 0;
+  var img = lb.querySelector('img'), i = 0;
   function show(n) {
     i = (n + prints.length) % prints.length;
     img.src = prints[i].getAttribute('href');
-    cap.textContent = prints[i].getAttribute('data-cap') || '';
     lb.hidden = false;
   }
   prints.forEach(function (p, n) {
